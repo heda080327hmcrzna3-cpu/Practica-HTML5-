@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Web App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="html5.png" alt="Logo HTML5">
+      <div>
+        <h1>HTML5</h1>
+        <p>Base del desarrollo web moderno</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#que-es">¿Qué es?</a>
+      <a href="#estructura">Estructura</a>
+      <a href="#etiquetas">Etiquetas</a>
+      <a href="#semantica">Semántica</a>
+      <a href="#formularios">Formularios</a>
+      <a href="#multimedia">Multimedia</a>
+      <a href="#conclusion">Conclusión</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <span class="badge">Tema de la práctica</span>
+        <h2>Aprendiendo HTML5</h2>
+        <p>
+          Esta página está dedicada a explicar qué es HTML5, su estructura, sus etiquetas
+          y su importancia en el desarrollo web moderno.
+        </p>
+        <a href="#que-es" class="btn">Comenzar</a>
+      </div>
+      <div class="hero-imagen"></div>
+    </section>
+
+    <section id="que-es" class="seccion">
+      <article class="card">
+        <h2>¿Qué es HTML5?</h2>
+        <img src="html5.png" alt="Logo HTML5">
+        <p>
+          HTML5 es la quinta versión del lenguaje de marcado HTML (HyperText Markup Language),
+          que es el estándar utilizado para crear y estructurar el contenido de las páginas web.
+          Fue desarrollado por la W3C y el WHATWG, y se convirtió en estándar oficial en 2014.
+        </p>
+        <p>
+          HTML5 no es un lenguaje de programación, sino un lenguaje de marcado. Esto significa
+          que usamos etiquetas para indicarle al navegador cómo mostrar el contenido, como textos,
+          imágenes, videos, formularios y más.
+        </p>
+        <p>
+          Entre sus principales ventajas están: mejor soporte para multimedia sin necesidad de
+          plugins externos, nuevas etiquetas semánticas que mejoran la organización del código,
+          compatibilidad con dispositivos móviles y mejor integración con CSS3 y JavaScript.
+        </p>
+      </article>
+    </section>
+
+    <section id="estructura" class="seccion">
+      <article class="card">
+        <h2>Estructura básica de HTML5</h2>
+        <img src="4.png" alt="Estructura HTML5">
+        <div class="codigo">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+          &lt;head&gt;<br>
+          &nbsp;&nbsp;&lt;title&gt;Mi página&lt;/title&gt;<br>
+          &lt;/head&gt;<br>
+          &lt;body&gt;<br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt;
+        </div>
+        <p>
+          Todo documento HTML5 comienza con la declaración <strong>&lt;!DOCTYPE html&gt;</strong>,
+          que le indica al navegador que el documento usa la versión 5 de HTML.
+        </p>
+        <p>
+          La etiqueta <strong>&lt;html&gt;</strong> es la raíz del documento y contiene todo el contenido.
+          Dentro de ella hay dos partes principales: el <strong>&lt;head&gt;</strong> y el <strong>&lt;body&gt;</strong>.
+        </p>
+        <p>
+          El <strong>&lt;head&gt;</strong> contiene información que el navegador necesita pero que el usuario
+          no ve directamente, como el título de la página, los estilos CSS y los metadatos.
+          El <strong>&lt;body&gt;</strong> contiene todo el contenido visible de la página: textos,
+          imágenes, botones, formularios, etc.
+        </p>
+      </article>
+    </section>
+
+    <section id="etiquetas" class="seccion">
+      <article class="card">
+        <h2>Etiquetas principales</h2>
+        <img src="1.png" alt="Etiquetas HTML5">
+        <div class="grid">
+          <div class="mini-card">
+            <h3>h1 - h6</h3>
+            <p>Son etiquetas de títulos o encabezados. h1 es el más importante y grande, y h6 el más pequeño. Se usan para organizar jerárquicamente el contenido.
+            </p>
+          </div>
+          <div class="mini-card">
+            <h3>p</h3>
+            <p>La etiqueta de párrafo se usa para escribir bloques de texto. El navegador agrega un espacio automático antes y después de cada párrafo.</p>
+          </div>
+          <div class="mini-card">
+            <h3>img</h3>
+            <p>Permite insertar imágenes en la página. Usa el atributo src para indicar la ruta de la imagen y alt para describir la imagen en caso de que no cargue.</p>
+          </div>
+          <div class="mini-card">
+            <h3>a</h3>
+            <p>Es la etiqueta de enlace o ancla. Permite crear hipervínculos hacia otras páginas, secciones del mismo documento o archivos. Usa el atributo href para la dirección.</p>
+          </div>
+          <div class="mini-card">
+            <h3>button</h3>
+            <p>Crea un botón interactivo en la página. Puede ejecutar acciones con JavaScript o enviar formularios cuando el usuario hace clic en él.</p>
+          </div>
+          <div class="mini-card">
+            <h3>ul / ol / li</h3>
+            <p>ul crea listas sin orden (con puntos), ol crea listas ordenadas (con números), y li define cada elemento de la lista. Se usan para mostrar información en forma de lista.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="semantica" class="seccion">
+      <article class="card">
+        <h2>HTML5 semántico</h2>
+        <img src="2.png" alt="HTML5 semántico">
+        <p>
+          Las etiquetas semánticas de HTML5 describen claramente el significado de su contenido,
+          tanto para el navegador como para el desarrollador. Ayudan a organizar mejor el código
+          y mejoran el posicionamiento en buscadores (SEO).
+        </p>
+        <div class="grid">
+          <div class="mini-card">
+            <h3>header</h3>
+            <p>Define el encabezado de la página o de una sección. Generalmente contiene el logo, el título del sitio y el menú de navegación principal.</p>
+          </div>
+          <div class="mini-card">
+            <h3>nav</h3>
+            <p>Representa un bloque de enlaces de navegación. Se usa para el menú principal del sitio, permitiendo al usuario moverse entre secciones o páginas.</p>
+          </div>
+          <div class="mini-card">
+            <h3>main</h3>
+            <p>Indica el contenido principal del documento. Solo debe haber un elemento main por página y contiene el contenido más relevante para el usuario.</p>
+          </div>
+          <div class="mini-card">
+            <h3>section</h3>
+            <p>Define una sección temática del contenido. Se usa para agrupar contenido relacionado dentro de la página, como capítulos o partes de un artículo.</p>
+          </div>
+          <div class="mini-card">
+            <h3>article</h3>
+            <p>Representa contenido independiente que podría distribuirse por separado, como una entrada de blog, una noticia o una tarjeta de información.</p>
+          </div>
+          <div class="mini-card">
+            <h3>footer</h3>
+            <p>Define el pie de página del sitio o de una sección. Suele contener información de contacto, derechos de autor o enlaces adicionales.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="formularios" class="seccion">
+      <article class="card">
+        <h2>Formularios en HTML5</h2>
+        <img src="3.png" alt="Formularios HTML5">
+        <p>
+          Los formularios en HTML5 permiten recopilar información del usuario. Se crean con la
+          etiqueta <strong>&lt;form&gt;</strong> y dentro de ella se colocan diferentes elementos
+          como campos de texto, botones y áreas de comentarios.
+        </p>
+        <p>
+          Los elementos más usados en formularios son: <strong>input</strong> para campos de entrada
+          de datos, <strong>label</strong> para etiquetar cada campo, <strong>textarea</strong> para
+          texto largo, <strong>select</strong> para listas desplegables y <strong>button</strong>
+          para enviar o ejecutar acciones.
+        </p>
+
+        <form class="demo-form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Ejemplo">
+
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" placeholder="ejemplo@email.com">
+
+          <label for="comentario">Comentario</label>
+          <textarea id="comentario" rows="4" placeholder="Escribe aquí..."></textarea>
+
+          <button type="button">Enviar</button>
+        </form>
+      </article>
+    </section>
+
+    <section id="multimedia" class="seccion">
+      <article class="card">
+        <h2>Multimedia en HTML5</h2>
+        <p>
+          Una de las grandes mejoras de HTML5 fue el soporte nativo para multimedia. Antes era
+          necesario instalar plugins como Flash para reproducir videos o audio. Ahora HTML5
+          permite hacerlo directamente con sus propias etiquetas, sin necesidad de software adicional.
+        </p>
+        <div class="grid">
+          <div class="mini-card">
+            <h3>Imágenes</h3>
+            <p>La etiqueta img permite mostrar imágenes en la página. Sus atributos principales son src (ruta de la imagen), alt (texto alternativo) y width/height para el tamaño.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Audio</h3>
+            <p>La etiqueta audio permite insertar archivos de sonido. Con el atributo controls se muestra un reproductor. Soporta formatos como mp3 y ogg.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Video</h3>
+            <p>La etiqueta video permite insertar videos directamente en la página sin plugins. Se pueden agregar controles de reproducción, pausa y volumen con el atributo controls.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Accesibilidad</h3>
+            <p>El atributo alt en las imágenes es fundamental para la accesibilidad. Permite que lectores de pantalla describan la imagen a personas con discapacidad visual.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="conclusion" class="seccion">
+      <article class="card">
+        <h2>Conclusión</h2>
+        <p>
+          HTML5 es la base del desarrollo web moderno. Gracias a sus etiquetas semánticas,
+          soporte multimedia nativo y mejor organización del código, se ha convertido en el
+          estándar que todo desarrollador web debe conocer.
+        </p>
+        <p>
+          A lo largo de esta práctica aprendí que HTML5 no solo sirve para mostrar texto en
+          una página, sino que permite estructurar contenido de forma lógica y significativa,
+          facilitando el trabajo tanto para los navegadores como para los programadores.
+          También comprendí la importancia de separar el contenido (HTML), el diseño (CSS)
+          y la funcionalidad (JavaScript) en archivos diferentes.
+        </p>
+        <p><strong>Alumno:</strong> JOSE ANTONIO HERNANDEZ DIAZ</p>
+        <p><strong>Materia:</strong> Desarrollo de Aplicaciones Móviles</p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Práctica HTML5 • Submódulo 2</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
